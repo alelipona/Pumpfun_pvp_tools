@@ -3,7 +3,7 @@
 一个基于Electron的Pumpfun Pvp 交易工具，支持代币创建、买入、卖出、拉盘等功能。
 
 + ## 项目结构
-+ ```
+ ```
 + pump-trader/
 + ├── src/
 + │   ├── create.js      # 代币创建相关功能
@@ -18,7 +18,7 @@
 + ├── .env.example       # 环境变量示例
 + ├── package.json       # 项目配置文件
 + └── README.md          # 项目说明文档
-+ ```
+ ```
 +
 + ### 主要模块说明
 + - **create.js**: 实现代币创建和初始买入功能
@@ -59,10 +59,10 @@
 
 + ```bash
 + # 克隆项目
-+ git clone https://github.com/yourusername/pump-trader.git
++ git clone https://github.com/vnxfsc/Pumpfun_pvp_tools
 + 
 + # 进入项目目录
-+ cd pump-trader
++ cd Pumpfun_pvp_tools
 + 
 + # 安装依赖
 + npm install
