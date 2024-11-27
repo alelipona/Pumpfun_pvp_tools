@@ -2,7 +2,9 @@
 
 一个基于Electron的Pumpfun Pvp 交易工具，支持代币创建、买入、卖出、拉盘等功能。
  ## 图示
- 
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/00efb7f1-72a1-449d-800f-fb3ada5386bc">
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/e6b21f84-90d2-45f1-a24b-7af983b957fd">
+
  ## 项目结构
  ```
 Pumpfun_pvp_tools/
