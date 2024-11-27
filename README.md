@@ -133,6 +133,8 @@ WALLET_LAPAN_KEY_100=
  - 如遇问题请提交Issue
  - 欢迎提交Pull Request改进代码
  - 交流群：[https://t.me/chainbuff](https://t.me/chainbuff) 
+ ## 打赏
+ - Solana地址：8nMFEMb1MXE8BjTBuAYMuy1mYtwwKNQcm937Y9yy9eHu
  ## 免责声明
   本工具仅供学习研究使用，使用本工具产生的任何后果由使用者自行承担。 
  ## 许可证
