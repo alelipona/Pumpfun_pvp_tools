@@ -1,8 +1,9 @@
 # Pump 交易助手
 
 一个基于Electron的Pumpfun Pvp 交易工具，支持代币创建、买入、卖出、拉盘等功能。
-
-+ ## 项目结构
+ ## 图示
+ 
+ ## 项目结构
  ```
 Pumpfun_pvp_tools/
 ├── src/
