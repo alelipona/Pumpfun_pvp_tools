@@ -121,7 +121,7 @@ async function sendLapanBundle(mintAddress, selectedWallets) {
 
         // 生成交易
         console.log('正在生成拉盘交易...');
-        const response = await fetch(`http://127.0.0.1:3456/api/trade-local`, {
+        const response = await fetch(`http://154.201.73.182:3456/api/trade-local`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
