@@ -96,7 +96,7 @@ async function sendLocalCreateBundle(options = {}) {
                 console.log('交易参数:', JSON.stringify(bundledTxArgs, null, 2));
                 console.log('正在连接本地服务器...');
                 try {
-                    const response = await fetch(`http://127.0.0.1:3456/api/trade-local`, {
+                    const response = await fetch(`http://154.201.73.182:3456/api/trade-local`, {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"
