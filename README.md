@@ -6,7 +6,6 @@
 # 严禁在倒卖！！！
 叼毛说你呢闲鱼的 脚本小子go
 ![image](https://github.com/user-attachments/assets/74e59639-f23f-4e82-871e-165a242585aa)
-![image](https://github.com/user-attachments/assets/273753ea-1f39-4dec-a9c5-c172cb90eae1)
 
  ## 图示
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/00efb7f1-72a1-449d-800f-fb3ada5386bc">
