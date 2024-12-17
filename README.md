@@ -3,7 +3,7 @@
 - 一个基于Electron的Pumpfun Pvp 交易工具，支持代币创建、买入、卖出、拉盘等功能。
 - 免费接口无需pumpportal高额手续费 http://154.201.73.182:3456/api/trade-local
 - 免费接口已被攻击无法使用
-# 严禁在倒卖！！！
+# 严禁倒卖！！！
 叼毛说你呢闲鱼的 脚本小子go
 ![image](https://github.com/user-attachments/assets/74e59639-f23f-4e82-871e-165a242585aa)
 
