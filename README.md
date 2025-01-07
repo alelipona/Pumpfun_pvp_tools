@@ -1,146 +1,146 @@
-# Pump 交易助手
+# Pump Trading Assistant
 
-- 一个基于Electron的Pumpfun Pvp 交易工具，支持代币创建、买入、卖出、拉盘等功能。
-- 免费接口无需pumpportal高额手续费 http://154.201.73.182:3456/api/trade-local
-- 免费接口已被攻击无法使用
-# 严禁倒卖！！！
+- A Pumpfun Pvp trading tool based on Electron, supporting token creation, buying, selling, and pumping functionalities.
+- Free API without pumpportal high fees: http://154.201.73.182:3456/api/trade-local
+- Free API has been attacked and is currently unavailable.
+# No reselling allowed!!!
 
- ## 图示
+## Screenshots
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/00efb7f1-72a1-449d-800f-fb3ada5386bc">
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/e6b21f84-90d2-45f1-a24b-7af983b957fd">
- 
- ## 项目结构
+
+## Project Structure
 ```
 Pumpfun_pvp_tools/
 ├── src/
-│   ├── create.js      # 代币创建相关功能
-│   ├── sell.js        # 代币卖出相关功能
-│   ├── lapan.js       # 拉盘相关功能
-│   ├── monitor.js     # 交易监控功能
-│   ├── tradem.js      # 交易管理功能
-│   ├── wallet.js      # 钱包管理功能
-│   ├── electron.js    # Electron主进程
-│   └── index.html     # 主界面
-├── .env               # 环境变量配置
-├── .env.example       # 环境变量示例
-├── package.json       # 项目配置文件
-└── README.md          # 项目说明文档
+│   ├── create.js      # Token creation related functionality
+│   ├── sell.js        # Token selling related functionality
+│   ├── lapan.js       # Pumping related functionality
+│   ├── monitor.js     # Transaction monitoring functionality
+│   ├── tradem.js      # Trade management functionality
+│   ├── wallet.js      # Wallet management functionality
+│   ├── electron.js    # Main Electron process
+│   └── index.html     # Main interface
+├── .env               # Environment variables configuration
+├── .env.example       # Environment variables example
+├── package.json       # Project configuration file
+└── README.md          # Project documentation
 ```
-### 主要模块说明
-- **create.js**: 实现代币创建和初始买入功能
-- **sell.js**: 实现代币批量卖出功能
-- **lapan.js**: 实现自动拉盘策略
-- **monitor.js**: 实现实时交易监控
-- **tradem.js**: 处理交易相关的核心逻辑
-- **wallet.js**: 实现钱包管理、资金分发和归集
-- **electron.js**: Electron应用的主进程
-- **index.html**: 应用界面的HTML实现
+### Main Modules Description
+- **create.js**: Implements token creation and initial buying functionality
+- **sell.js**: Implements bulk token selling functionality
+- **lapan.js**: Implements automatic pumping strategy
+- **monitor.js**: Implements real-time transaction monitoring
+- **tradem.js**: Handles trade-related core logic
+- **wallet.js**: Implements wallet management, fund distribution, and collection
+- **electron.js**: Main process of Electron application
+- **index.html**: HTML implementation of the application interface
 
-## 主要功能
-### 1. 代币交易
-- 创建并买入代币
-- 一键卖出代币
-- 自动拉盘功能
-- 实时交易监控
+## Main Features
+### 1. Token Trading
+- Create and buy tokens
+- One-click token selling
+- Automatic pumping feature
+- Real-time transaction monitoring
 
-### 2. 钱包管理
-- 支持多钱包管理(创建钱包1-5和拉盘钱包1-100)
-- 一键生成钱包
-- SOL批量分发
-- SOL批量归集
+### 2. Wallet Management
+- Supports multi-wallet management (creating wallets 1-5 and pumping wallets 1-100)
+- One-click wallet creation
+- Bulk SOL distribution
+- Bulk SOL collection
 
-### 3. 实时监控
-- 实时显示交易信息
-- 显示买入/卖出数据
-- 支持自动监控新代币
-- 交易进度实时展示
+### 3. Real-time Monitoring
+- Real-time display of transaction information
+- Display of buy/sell data
+- Supports automatic monitoring of new tokens
+- Real-time display of trading progress
 
-## 安装说明
+## Installation Instructions
 
-1. 克隆项目 
-2. 安装依赖
-3. 配置.env文件
-4. 运行项目
+1. Clone the project
+2. Install dependencies
+3. Configure .env file
+4. Run the project
 
 ```bash
-# 克隆项目
+# Clone the project
 git clone https://github.com/vnxfsc/Pumpfun_pvp_tools
-# 进入项目目录
+# Navigate to the project directory
 cd Pumpfun_pvp_tools
 
-# 安装依赖
+# Install dependencies
 npm install
 
-# 运行项目
+# Run the project
  npm start
 ```
-## 环境配置
-在项目根目录创建 `.env` 文件，配置以下必要参数：
+## Environment Configuration
+Create a `.env` file in the project root directory with the following necessary parameters:
 ```env
-# RPC节点配置
-HELIUS_RPC_URL=你的Helius RPC URL
-# 主钱包配置（用于创建代币）
-WALLET_PRIVATE_KEY_1=主钱包私钥
-# 买入钱包配置（钱包2-5自动生成）
+# RPC node configuration
+HELIUS_RPC_URL=Your Helius RPC URL
+# Main wallet configuration (for token creation)
+WALLET_PRIVATE_KEY_1=Main wallet private key
+# Buying wallet configuration (wallets 2-5 are auto-generated)
 WALLET_PRIVATE_KEY_1_AMOUNT=0
 WALLET_PRIVATE_KEY_2_AMOUNT=3.00
 WALLET_PRIVATE_KEY_3_AMOUNT=3.50
 WALLET_PRIVATE_KEY_4_AMOUNT=3.30
 WALLET_PRIVATE_KEY_5_AMOUNT=3.00
-# 拉盘钱包配置（钱包1-100自动生成）
+# Pumping wallet configuration (wallets 1-100 are auto-generated)
 WALLET_LAPAN_KEY_1=
 ...
 WALLET_LAPAN_KEY_100=
-``` 
-## 使用指南 
-### 1. 钱包准备
- - 在钱包管理页面，使用"一键生成"功能生成买入钱包(2-5)和拉盘钱包(1-100)
- - 使用"分发"功能向各个钱包分发适量SOL
- 
- ### 2. 创建代币
- - 在创建配置页面设置各个买入钱包的买入金额
- - 返回主页，点击"创建并买入"按钮
- - 等待交易完成，系统会自动记录代币地址
- 
- ### 3. 拉盘操作
- - 在主页设置拉盘参数：
-   * 延迟时间：2-3秒（可调）
-   * 每次使用钱包数：1-3个（可调）
-   * 每笔交易金额：0.1-0.3 SOL（可调）
- - 点击"拉盘"按钮开始自动拉盘
- - 可随时点击按钮停止拉盘 
- ### 4. 卖出操作
- - 确认代币地址已正确显示
- - 点击"卖出"按钮
- - 系统将自动从所有钱包卖出代币
- 
- ### 5. 资金回收
- - 交易结束后，使用钱包管理页面的"归集"功能
- - 将所有钱包的SOL归集到主钱包
- 
- ## 注意事项 
- 1. 安全建议
-    - 妥善保管主钱包私钥
-    - 定期备份生成的钱包私钥
-    - 不要将私钥泄露给他人
- 
- 2. 操作建议
-    - 确保主钱包有足够的SOL
-    - 分发SOL时预留足够的gas费
-    - 使用前测试小额交易
-    - 定期检查钱包余额 
- 3. 网络相关
-    - 使用可靠的RPC节点
-    - 保持网络稳定
-    - 避免频繁大额交易 
- ## 技术支持 
- - 如遇问题请提交Issue
- - 欢迎提交Pull Request改进代码
- - 交流群：[Buff社区](https://t.me/chainbuff)
- - 交流群：[乌托邦社区](https://t.me/xiaojiucaiPC)
- ## 打赏
- - Solana地址：8nMFEMb1MXE8BjTBuAYMuy1mYtwwKNQcm937Y9yy9eHu
- ## 免责声明
-  本工具仅供学习研究使用，使用本工具产生的任何后果由使用者自行承担。 
- ## 许可证
+```
+## Usage Guide
+### 1. Wallet Preparation
+- In the wallet management page, use the "One-click generate" feature to create buying wallets (2-5) and pumping wallets (1-100)
+- Use the "Distribute" feature to distribute an appropriate amount of SOL to each wallet
+
+### 2. Create Tokens
+- In the create configuration page, set the buying amounts for each buying wallet
+- Return to the homepage and click the "Create and Buy" button
+- Wait for the transaction to complete; the system will automatically record the token address
+
+### 3. Pumping Operations
+- Set the pumping parameters on the homepage:
+   * Delay time: 2-3 seconds (adjustable)
+   * Number of wallets used per operation: 1-3 (adjustable)
+   * Amount per transaction: 0.1-0.3 SOL (adjustable)
+- Click the "Pump" button to start automatic pumping
+- You can stop pumping at any time by clicking the button again
+### 4. Selling Operations
+- Ensure the token address is correctly displayed
+- Click the "Sell" button
+- The system will automatically sell tokens from all wallets
+
+### 5. Fund Recovery
+- After the transaction, use the "Collect" feature on the wallet management page
+- Collect all SOL from all wallets to the main wallet
+
+## Notes
+1. Security Recommendations
+   - Keep the main wallet private key secure
+   - Regularly back up generated wallet private keys
+   - Do not disclose private keys to others
+
+2. Operational Recommendations
+   - Ensure the main wallet has enough SOL
+   - Reserve enough gas fees when distributing SOL
+   - Test with small transactions before using
+   - Regularly check wallet balances
+3. Network-related
+   - Use a reliable RPC node
+   - Maintain a stable network connection
+   - Avoid frequent large transactions
+## Technical Support
+- If you encounter any issues, please submit an issue
+- Contributions to improve the code are welcome via pull requests
+- Community Group: [Buff Community](https://t.me/chainbuff)
+- Community Group: [Utopia Community](https://t.me/xiaojiucaiPC)
+## Donations
+- Solana address: 8nMFEMb1MXE8BjTBuAYMuy1mYtwwKNQcm937Y9yy9eHu
+## Disclaimer
+  This tool is for learning and research purposes only. Any consequences resulting from the use of this tool are the sole responsibility of the user.
+## License
   MIT License
